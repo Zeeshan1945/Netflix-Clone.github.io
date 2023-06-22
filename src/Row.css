@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+.row{
+    color: white;
+    margin-left: 20px;
+}
+.row__posters{
+    display: flex;
+    overflow-x: scroll;
+    padding: 30px;
+    filter: drop-shadow(3px 2px 4px #678493);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.row__poster{
+    max-height: 100px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.row__posterLarge{
+    max-height: 250px;
+}
